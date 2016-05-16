@@ -162,6 +162,6 @@ class PerfPerformance1 extends Simulation {
 			.headers(headers_25)))
 
 	// setUp(scn.inject(atOnceUsers(1)))
-	setUp(scn.inject(constantUsersPerSec(1) during(30 seconds)))
+	setUp(scn.inject(constantUsersPerSec(10) during(30 seconds)))
 	.protocols(httpProtocol)
 }
