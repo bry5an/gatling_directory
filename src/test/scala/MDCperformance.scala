@@ -125,7 +125,7 @@ class TickerTest extends Simulation {
 
 	// setUp(scn.inject(atOnceUsers(1)))
 	setUp(
-		scn.inject(constantUsersPerSec(6) during(30 seconds))
+		scn.inject(constantUsersPerSec(2) during(30 seconds))
 		// scn.inject(atOnceUsers(30))
 	).protocols(httpProtocol)
 }
