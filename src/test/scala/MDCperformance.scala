@@ -5,7 +5,7 @@ import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
 
-class TickerTest extends Simulation {
+class FU750 extends Simulation {
 
 	val httpProtocol = http
 		.baseURL("https://mdc-performance.kingsmensoftware.com")
@@ -36,7 +36,7 @@ class TickerTest extends Simulation {
     val uri1 = "https://f2-registry-performance.kingsmensoftware.com:443"
     val uri2 = "https://mdc-performance.kingsmensoftware.com:443"
 
-	val scn = scenario("TickerTest")
+	val scn = scenario("FU750")
 		// Initial Site Load
 		.exec(http("request_0")
 			.get("/")
